@@ -15,3 +15,21 @@ int fastPow(int a, int n) {
     }
 }
 
+/**
+ * 位运算，更快
+ * @param a
+ * @param n
+ * @return
+ */
+int fastPow2(int a, int n) {
+    int base = a;
+    int res = 1;
+    while (n) {
+        if (n & 1) {//二进制n的最后一位是1，表示这个地方需要乘
+            res *= base;
+        }
+        base *= base;//a^2==>a^4==>a^8
+        n >>= 1;
+    }
+    return res;
+}
