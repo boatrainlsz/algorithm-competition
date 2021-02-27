@@ -2,7 +2,7 @@
 // Created by Amy on 2020/12/17.
 //
 
-#include "vector_test.h"
+#include "VectorTest.h"
 #include "bits/stdc++.h"
 
 using namespace std;
