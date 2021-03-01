@@ -3,4 +3,9 @@ project(algorithm)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(algorithm main.cpp chapter3/VectorTest.cpp chapter3/VectorTest.h chapter4/permutation.cpp chapter4/permutation.h)
+add_executable(algorithm main.cpp
+        chapter3/VectorTest.cpp
+        chapter3/VectorTest.h
+        chapter4/permutation.cpp
+        chapter4/permutation.h
+        chapter8/chapter8.cpp)
