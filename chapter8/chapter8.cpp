@@ -1,9 +1,35 @@
 //
-// Created by Amy on 2021/2/27.
+// Created by Amy on 2021/3/1.
 //
 
-#include "FastPow.h"
 
+/**
+ * 最大公约数
+ * @param a
+ * @param b
+ * @return
+ */
+int gcd(int a, int b) {
+    return b == 0 ? a : gcd(b, a % b);
+}
+
+/**
+ * 最小公倍数
+ * @param a
+ * @param b
+ * @return
+ */
+int lcm(int a, int b) {
+    return a / gcd(a, b) * b;
+}
+
+
+/**
+ * 快速幂
+ * @param a
+ * @param n
+ * @return
+ */
 int fastPow(int a, int n) {
     if (n == 1)return a;
     int tmp = fastPow(a, n / 2);
